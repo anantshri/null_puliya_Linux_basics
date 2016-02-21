@@ -1,4 +1,4 @@
----
+http://vim.wikia.com/wiki/Tutorial---
 ---
 # SHELL SCRIPTING
 
@@ -54,7 +54,7 @@ Example
 
 <pre>
 test -b file
-<\pre>
+</pre>
 this will return true if file exists and is block special file
 
 __Test shorthand__
@@ -62,7 +62,7 @@ most of the shell scripts will be using short hand version of test command as sh
 
 <pre>
 [ -b file ]
-<\pre>
+</pre>
 note a blank space at both sides of brackets. this gap is important and is required.
 
 
@@ -79,7 +79,7 @@ if [ ! -d /mnt ]
 then
    mkdir /mnt
 fi
-<\pre>
+</pre>
 
 ### case
 
@@ -99,7 +99,7 @@ case $NUM of
    echo The number is not 1 or 2
    ;;
 esac
-<\pre>
+</pre>
 
 
 ### for 
@@ -117,7 +117,7 @@ So in short below for loop will print 1 to 10
 for i in {1..10}; do
    echo $i
 done
-<\pre>
+</pre>
 
 ### until 
 
@@ -128,7 +128,7 @@ until [ expression ]
 do
    statements
 done
-<\pre>
+</pre>
 
 ### while 
 Cycles through a loop while some condition is met. The below example will cycle through a loop forever: 
@@ -138,4 +138,4 @@ while [ 1 ]
 do
    statement(s)
 done
-<\pre>
+</pre>
