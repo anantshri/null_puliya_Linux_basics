@@ -1,4 +1,4 @@
-http://vim.wikia.com/wiki/Tutorial---
+---
 ---
 # SHELL SCRIPTING
 
