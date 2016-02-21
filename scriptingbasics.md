@@ -19,7 +19,8 @@ __Test__
 
 There is a function provided by bash called test which returns a true or false value depending on the result of the tested expression. Its syntax is: 
 
-test expression
+__test expression__
+
 * -b file = True if the file exists and is block special file. 
 * -c file = True if the file exists and is character special file. 
 * -d file = True if the file exists and is a directory. 
@@ -51,15 +52,17 @@ test expression
 
 Example
 
-```test -b file```
+<pre>
+test -b file
+<\pre>
 this will return true if file exists and is block special file
 
 __Test shorthand__
 most of the shell scripts will be using short hand version of test command as shown below
 
-```
+<pre>
 [ -b file ]
-```
+<\pre>
 note a blank space at both sides of brackets. this gap is important and is required.
 
 
@@ -71,19 +74,20 @@ note a blank space at both sides of brackets. this gap is important and is requi
 Used to execute one or more statements on a condition. 
 
 An example: 
-```
+<pre>
 if [ ! -d /mnt ]		
 then
    mkdir /mnt
 fi
-```
+<\pre>
 
 ### case
 
 Used to execute specific commands based on the value of a variable.
 
 An example: 
-```
+
+<pre>
 case $NUM of
 1)
    echo The number is 1
@@ -95,7 +99,7 @@ case $NUM of
    echo The number is not 1 or 2
    ;;
 esac
-```
+<\pre>
 
 
 ### for 
@@ -109,29 +113,29 @@ Example: Here we have used 2 things
 
 So in short below for loop will print 1 to 10
 
-```
+<pre>
 for i in {1..10}; do
    echo $i
 done
-```
+<\pre>
 
 ### until 
 
 Cycles through a loop until some condition is met. The syntax for the command is shown below: 
 
-```
+<pre>
 until [ expression ]
 do
    statements
 done
-```
+<\pre>
 
 ### while 
 Cycles through a loop while some condition is met. The below example will cycle through a loop forever: 
 
-```
+<pre>
 while [ 1 ]
 do
    statement(s)
 done
-```
+<\pre>
