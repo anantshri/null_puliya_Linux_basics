@@ -88,7 +88,7 @@ Used to execute specific commands based on the value of a variable.
 An example: 
 
 <pre>
-case $NUM of
+case $NUM in
 1)
    echo The number is 1
    ;;
